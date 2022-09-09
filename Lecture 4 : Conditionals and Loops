@@ -1,0 +1,951 @@
+# Relational and Logical Operators
+
+package fundamentals;
+import java.util.Scanner;
+public class RelationalLogicalOperators {
+    public static void main(String args[]) {
+     
+     int a=10,b=10;
+     System.out.println(a>b);
+     System.out.println(a<b);
+     System.out.println(a==b);
+     System.out.println(a!=b);
+     System.out.println(a>=b);
+     System.out.println(a<=b);
+     System.out.println(a>=10 && b>10);
+     System.out.println(a>=10 || b>10);
+    }
+}
+
+************************************************************
+ # What is the error in this code?
+byte b = 50;
+b = b * 50;
+
+Ans: 2nd statement, b is multiplied with 50 where b is byte variable and 50 is an integer. 
+So after the multiplication, result comes as an integer value which is 2500. 
+Now we are trying to assign this integer to a byte variable, which will cause the error.
+
+#Find the output
+
+public class  Solution{
+    public static void main(String [] args)  {
+        double a = 6 / 4;
+        int b  = 6 / 4;
+        double c = a + b;
+        System.out.println(c);
+    }
+}
+
+Ans: 2.0
+
+# Predict the output
+
+public class  Solution{
+    public static void main(String [] args)  {
+        double a = 55.5;
+        int b = 55;
+        a = a % 10;
+        b = b % 10;
+        System.out.println(a + " "  + b);
+      }
+ }
+ 
+ Ans: 5.5 5
+ 
+ 
+# Predict the output
+
+public class  Solution {
+    public static void main(String [] args)  {
+        int var1 = 5;
+        int var2 = 6;
+        System.out.print(var1 > var2);
+    }
+}
+
+Ans: false
+
+****************************************************************************************
+# Basics of conditionals 
+package fundamentals;
+import java.util.Scanner;
+public class LargestOfTwo {
+    public static void main(String args[]) {
+      Scanner s=new Scanner(System.in);
+      int a,b;
+      a=s.nextInt();
+      b=s.nextInt();
+      if(a>b){
+          System.out.println("First num is greater");
+      }else{
+          System.out.println("Second num is greater");
+      }
+      System.out.println("Outside if else");
+    }
+}
+*****************************************************************************************
+
+
+Find the output of the following code:
+public static void main(String args[])
+{
+    int a=10,b=15;
+    if(a>b)
+    {
+        System.out.print("a ");
+    }
+    else
+    {
+        System.out.print("b ");
+    }
+    System.out.print("is greater");
+}
+
+Ans: b is greater.
+
+# Find the output of the following code:
+int a=50;
+if(a>10)
+{
+    System.out.print("Coding");
+}
+else(a>20)
+{
+    System.out.print("Ninjas");
+}
+
+Ans: Compile time error
+
+#### Even odd Question
+
+#Find the output
+
+public static void main(String args[])
+{
+        int x = 5; 
+        if (x < 6)
+            System.out.print("Hello  ");
+        if(x == 5){
+            System.out.print("Hi  ");
+        }
+        else{ 
+            System.out.print("Hey ");
+        } 
+}
+
+Ans: Hello Hi
+
+# Figure out the output
+
+public static void main(String[] args) {
+    int x = 15;
+    if(x <= 15){
+        System.out.print("Inside if  ");
+    }else if(x == 15){
+        System.out.print("Inside else if  ");
+    }
+    System.out.println(x);
+}
+
+Ans: Inside if 15
+
+# What will be the output
+
+    public static void main(String args[])
+    {
+        int var1 = 5; 
+        int var2 = 6;
+        if ((var2 = 1) == var1)
+            System.out.print(var2);
+        else 
+            System.out.print(var2 + 1);
+    }   
+    
+Ans: 2
+
+*******************************************************************************************
+#Conditionals and Operators
+
+package fundamentals;
+import java.util.Scanner;
+public class ConditionalAndRelational {
+    public static void main(String args[]) {
+      Scanner s=new Scanner(System.in);
+      int a,b;
+      a=s.nextInt();
+      b=s.nextInt();
+      if(a!=b){
+          System.out.println("Not Equal");
+      }else{
+          System.out.println("Equal");
+      }
+      //if(a>0||b>0){
+        //  System.out.println("One is positive");
+      //}else{
+        //  System.out.println("None is positive");
+      //}
+    }
+}
+******************************************************************************************
+# Positive Negative
+
+Let a and b are the two integers. Which option can be used to check out of two numbers one is positive and the other is negative
+
+Ans: a*b <0
+
+# Find the output
+
+Find the output of the following code:
+public static void main (String[] args) {
+    int a=50;
+    int b=Integer.MIN_VALUE;
+    if(a/0==b)
+    {
+
+        System.out.println("Hello");
+    }
+    else
+    {
+        System.out.println("Hi");
+    }
+}
+
+Ans: Runtime error
+
+# Find the output
+
+Find the output of the code :
+    public static void main (String[] args) {
+    int a=50,b=20;
+    if(a>b)
+    {
+        if(a>100)
+            System.out.println("Ace");
+        if(b<100)
+            b=50;
+    }
+    else if(a==b)
+    {
+        System.out.println("King");
+    }
+    else 
+    {
+        System.out.println("Queen");
+    }
+}
+
+Ans: No output
+
+********************************************************************************************************
+# Nested If else
+
+import java.util.Scanner;
+public class LargestOfTwo {
+    public static void main(String args[]) {
+      Scanner s=new Scanner(System.in);
+      int a,b;
+      a=s.nextInt();
+      b=s.nextInt();
+      if(a>b){
+          System.out.println("First number is greater");
+      }
+      else if(b>a){
+          System.out.println("Second number is greater");
+      }
+      else{
+          System.out.println("Both are equal");
+      }
+
+    }
+}
+
+*************************************************************************************************
+
+Find Character Case
+Send Feedback
+Write a program that takes a character as input and prints either 1, 0 or -1 according to the following rules.
+1, if the character is an uppercase alphabet (A - Z)
+0, if the character is a lowercase alphabet (a - z)
+-1, if the character is not an alphabet
+
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        // Write your code here
+        Scanner input = new Scanner (System.in);
+		char a = input.next().charAt(0);
+        
+        if((a >= 'A') && (a <= 'Z')){
+            System.out.println(1);
+        }
+        
+        else if((a >= 'a') && (a <= 'z')){
+            System.out.println(0);
+        }
+        
+        else{
+            System.out.println(-1);
+        }
+
+    }
+}
+************************************************************************************
+# Loop
+
+package fundamentals;
+import java.util.Scanner;
+public class WhileLoop {
+    public static void main(String args[]) {
+     
+      int n;
+      Scanner s=new Scanner(System.in);
+      n=s.nextInt();
+      int i=1;
+      while(i<=n){
+          System.out.println(i);
+          i=i+1;
+      }
+      
+
+    }
+}
+***************************************************************************************
+What will be the output of the following code:
+public static void main (String[] args) {
+   int i=0;
+   while(i<10)
+   {
+       i=i+1;
+       System.out.print(i);
+       i=i+1;
+   }
+}
+
+Ans: 13579
+
+**************************************************************************************************
+# Number of hello
+
+The number of Hello printed on the screen for the following code will be:
+public static void main (String[] args) {
+    int x=5;
+    int y=5;
+    while((x=5)==y)
+    {
+        System.out.println("Hello");
+        x++;
+        y++;
+    }
+}
+
+Ans: One
+
+*****************************************************************************************
+# Number of hello 2
+
+The number of Hello printed on the screen for the following code will be:
+public static void main (String[] args) {
+    int x=5;
+    int y=5;
+    while(x==y)
+    {
+        System.out.println("Hello");
+        x++;
+        y++;
+    }
+}
+
+Ans: Infinite
+
+******************************************************************************************
+# Sum of N numbers
+
+import java.util.Scanner;
+public class SumOfNNumbers {
+    public static void main(String args[]) {
+     
+      int n;
+      Scanner s=new Scanner(System.in);
+      n=s.nextInt();
+      int i=1;// Next num to be added
+      int sum=0;
+      while(i<=n){
+          sum=sum+i;
+          i=i+1;
+      }
+      System.out.println(sum);
+
+    }
+}
+
+**********************************************************************************
+# Same output
+
+Whichof the following codes gives same output:
+1
+   int i=1;
+   while(i<5)
+   {
+       System.out.print(2*i);
+       i=i+1;
+   }
+2
+   int i=2;
+   while(i<10)
+   {
+       System.out.print(i);
+       i=i+2;
+   }
+3
+   int i=2;
+   while(i<10)
+   {
+       System.out.print(i);
+       i*=2;
+   }
+4
+   int i=10;
+   while(i>0)
+   {
+       if(i%2==0)
+       {
+           System.out.print(10-i);
+       }
+       i--;
+   }
+   
+Ans: 1, 2   
+
+*****************************************************************************************
+Fahrenheit to Celsius Table
+Send Feedback
+Given three values - Start Fahrenheit Value (S), 
+End Fahrenheit value (E) and Step Size (W), 
+you need to convert all Fahrenheit values from Start to End at the gap of W,
+into their corresponding Celsius values and print the table.
+
+Sample Input 1:
+0 
+100 
+20
+Sample Output 1:
+0   -17
+20  -6
+40  4
+60  15
+80  26
+100 37
+Sample Input 2:
+20
+119
+13
+Sample Output 2:
+20  -6
+33  0 
+46  7
+59  15
+72  22
+85  29
+98  36
+111 43
+
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+        Scanner input = new Scanner(System.in);
+		*/
+      Scanner input = new Scanner(System.in);
+        int start = input.nextInt();
+        int end =  input.nextInt();
+        int stepSize =  input.nextInt();
+        
+        while(start <= end ){
+            int celcius = (int)((start - 32) * 0.5556);
+            System.out.println(start +" "+ celcius);
+            start = start + stepSize;
+            
+        }
+		
+	}
+
+}
+**********************************************************************************************************************
+# Check Primality
+
+import java.util.Scanner;
+public class CheckPrime {
+    public static void main(String args[]) {
+     
+      int n;
+      Scanner s=new Scanner(System.in);
+      n=s.nextInt();
+      int div=2;
+      boolean isPrime=true;
+      
+      while(div<=n-1){
+          if(n%div==0){
+         // System.out.println(div+" "+"Composite");
+          isPrime=false;
+          
+      }
+      div=div+1;
+      }
+      if(isPrime==true){
+          System.out.println("Prime");
+      }else{
+          System.out.println("Composite");
+      }
+      
+
+    }
+}
+*****************************************************************************************
+
+# Primality Check
+
+Can this code be used to check primality of a positive integer:
+public static void main (String[] args) {
+    Scanner s=new Scanner (System.in);
+    int n=s.nextInt();
+    boolean isprime=true;
+    if(n%2==0)
+        isprime=false;
+    int i=3;
+    while(isprime&&i<n)
+    {
+        isprime=!(n%i==0);
+        i+=2;
+    }
+    if(isprime)
+    {
+        System.out.println("Prime");
+    }
+    else
+    {
+        System.out.println("Composite");
+    }
+
+}
+
+Ans: No
+
+The code fails for n=2. Otherwise the code runs fine for every other positive integer. 
+
+************************************************************************************************************************************
+# Return Keyword 
+
+package fundamentals;
+import java.util.Scanner;
+public class ReturnKeyword {
+    public static void main(String args[]) {
+     
+      int n;
+      Scanner s=new Scanner(System.in);
+      n=s.nextInt();
+      int div=2;
+      boolean isPrime=true;
+      
+      while(div<=n-1){
+          if(n%div==0){
+         
+         System.out.println("Composite");
+          
+          return;
+          
+      }
+      div=div+1;
+      }
+      
+      
+
+    }
+}
+
+***************************************************************************************************************************************
+
+# Find the output
+
+Find the output for the following code:
+int i=10;
+    while((i=i-1)>0)
+    {
+        System.out.print(i);
+        if(i%5==0)
+            return;
+    }
+    
+    
+    Ans: 98765
+    
+**************************************************************************************
+# Scope of Variables
+    
+package fundamentals;
+import java.util.Scanner;
+public class ScopeOfVariables {
+    public static void main(String args[]) {
+     
+      int i=1;
+      int j=10;
+      while(i<=5){
+          System.out.println(j);
+          i++;
+          j++;
+      }
+      System.out.println(i);
+      System.out.println(j);
+      
+
+    }
+}
+
+**************************************************************************************
+# Will following code generate error ?
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a > 5) {
+            int b = 10;
+        }
+        System.out.println(b);
+    }
+}
+
+Ans: Yes
+
+*******************************************************************************************
+
+# Check the error
+
+Will following code generate error ?
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a > 5) {
+            a = 100;
+        }
+        System.out.println(a);
+    }
+}
+
+
+Ans: Yes
+
+*************************************************************************************************
+
+Will following code generate error ?
+public class Main {
+    public static void main(String[] args) {
+    for(int i = 0; i < 3; i++) {
+        System.out.print(i + " ");
+        }
+    System.out.print(i + " ");
+    }
+}
+
+
+Ans: Yes
+
+*************************************************************************************************
+What is the output ?
+public class Main {
+    public static void main(String[] args) {
+    int a = 10;
+    while(a > 5) {
+        int b = 1;
+        System.out.print(b + " ");
+        a--;
+    }
+    }
+}
+
+Ans: 1 1 1 1 1
+
+
+****************************************************************************************************************
+Total Salary
+Send Feedback
+Write a program to calculate the total salary of a person. The user has to enter the basic salary (an integer) and the grade (an uppercase character), and depending upon which the total salary is calculated as -
+    totalSalary = basic + hra + da + allow – pf
+where :
+hra   = 20% of basic
+da    = 50% of basic
+allow = 1700 if grade = ‘A’
+allow = 1500 if grade = ‘B’
+allow = 1300 if grade = ‘C' or any other character
+pf    = 11% of basic.
+Round off the total salary and then print the integral part only.
+
+Sample Input 1 :
+10000 A
+Sample Output 1 :
+17600
+Sample Input 2 :
+4567 B
+Sample Output 2 :
+8762
+
+
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner input = new Scanner(System.in);
+        int basic = input.nextInt();
+        
+        char grade = input.next().charAt(0);
+        
+        double hra = (double)(basic * 0.2);
+        double da = (double)(basic * 0.5);
+        int allow = 0;
+        
+        if(grade == 'A'){
+            allow = 1700;
+            
+        }
+        
+        else if(grade == 'B'){
+            allow = 1500;
+        }
+        
+        else{
+            allow = 1300;
+        }
+        
+        
+        double pf = (double)(basic * 0.11);
+        
+        double totalSalary = basic + allow + hra + da  - pf;
+        
+        
+        System.out.println(Math.round(totalSalary));
+        
+
+	}
+}
+
+**************************************************************************************************************
+
+# Multiplication Table
+
+Write a program to print multiplication table of n
+Input Format :
+A single integer, n
+Output Format :
+First 10 multiples of n each printed in new line
+Constraints :
+0 <= n <= 10,000
+Sample Input 1 :
+2
+Sample Output 1 :
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+Sample Input 2 :
+5
+Sample Output 2 :
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+
+
+import java.util.Scanner;
+public class Main {
+	
+	    public static void main(String[] args) {
+		// Write your code here
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        
+        int i = 1;
+        
+        while(i <= 10 ){
+            System.out.println(n * i);
+            
+            i++;
+        }
+	}
+}
+
+
+**********************************************************************************************************
+# Sum of even & odd
+
+Write a program to input an integer N and print the sum of all its even digits and sum of all its odd digits separately.
+Digits mean numbers, not the places! That is, if the given integer is "13245", even digits are 2 & 4 and odd digits are 1, 3 & 5.
+Input format :
+ Integer N
+Output format :
+Sum_of_Even_Digits Sum_of_Odd_Digits
+(Print first even sum and then odd sum separated by space)
+Constraints
+0 <= N <= 10^8
+Sample Input 1:
+1234
+Sample Output 1:
+6 4
+Sample Input 2:
+552245
+Sample Output 2:
+8 15
+
+
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int evenDigitSum = 0;
+        int oddDigitSum = 0;
+        
+        while(n != 0){
+            int digit = n % 10;
+            n = n / 10;
+            
+            if(digit % 2 == 0){
+                evenDigitSum += digit;
+            }
+            
+            else{
+                oddDigitSum += digit;
+            }
+        }
+        
+        System.out.println(evenDigitSum + " " + oddDigitSum);
+
+	}
+}
+
+
+***************************************************************************************************************************
+# Factors
+
+Write a program to print all the factors of a number other than 1 and the number itself.
+Input Format :
+A single integer, n
+Output Format :
+All the factors of n excluding 1 and the number itself
+Constraints :
+0 <= n <= 10,000
+Sample Input 1 :
+8
+Sample Output 1 :
+2 4
+Sample Input 2 :
+11
+Sample Output 2 :
+
+
+
+Explanation of Sample Output 2 :
+No output as 11 is prime having factors as 1 and 11 only
+
+
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        // Write your code here
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int i = 2;
+        
+        while(i < n){
+            
+            
+            if( n % i == 0){
+                System.out.print(i+" ");
+                
+            }
+                
+            i++;
+            
+            
+        }
+        
+    }
+}
+
+*****************************************************************************************************************************
+# Find power of a number
+
+Write a program to find x to the power n (i.e. x^n). Take x and n from the user. You need to print the answer.
+Note : For this question, you can assume that 0 raised to the power of 0 is 1
+
+
+Input format :
+Two integers x and n (separated by space)
+Output Format :
+x^n (i.e. x raise to the power n)
+Constraints:
+0 <= x <= 8 
+0 <= n <= 9
+Sample Input 1 :
+ 3 4
+Sample Output 1 :
+81
+Sample Input 2 :
+ 2 5
+Sample Output 2 :
+32
+
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        // Write your code here
+        Scanner input = new Scanner(System.in);
+        int  x = input.nextInt();
+        int n = input.nextInt();
+        
+        int ans = 1;
+        int i = 0;
+        while(i < n){
+            ans *= x;
+            i++;
+            
+        }
+        
+        System.out.println(ans);
+        
+        
+        
+    }
+}
+
+**********************************************************************************************************
+ 
+ 
+ THE END
+
+
+
+
+
+
+
