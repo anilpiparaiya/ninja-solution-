@@ -1,0 +1,189 @@
+*********************************
+#1. Hello World in Java
+
+package fundamentals;
+public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World");
+    }
+}
+
+********************************
+
+#2 More on Hello World
+package fundamentals;
+public class HelloWorld {
+    public static void main(String args[]) {
+// println prints a new line at the end
+//
+    /*  System.out.println("Hello World");
+      System.out.println("Hello World");
+      System.out.println("Hello World");
+    */
+    }
+}
+
+*********************************************
+#3 Variable and Data Types
+package fundamentals;
+public class AddTwoNumbers {
+    public static void main(String args[]) {
+      int a=10;
+      int b=25;
+      int c=a+b;
+      System.out.println(c);
+    }
+}
+*********************************************
+
+#4 Ground rules while creating Data Types
+
+package fundamentals;
+public class DataTypes {
+    public static void main(String args[]) {
+      int a;
+      a=10;
+      int Var;
+      int var;
+      int isValid;
+      
+    }
+************************************************************************************
+
+Primitive data type 'long' is having size _______ byte(s) in Java Programming.
+Ans: 8.
+
+**************************************************************************************
+
+Which of the following data type stores longest decimal number ?
+Ans: Double.
+
+**************************************************************************************
+
+Which of these values can be assigned to a boolean variable in Java?
+
+Ans: true or false.
+
+**********************************************************************************************
+
+Which of these is a valid variable name ?
+Ans: var1.
+
+****************************************************************************************************
+
+Compiler never assigns a default value to an uninitialized local variable in Java Programming. Whether this statement is true or false ?
+Ans: True.
+
+***************************************************************************************************************************************************
+# Arithmetic operations and precedence
+package fundamentals;
+public class ArithematicOperators {
+    public static void main(String args[]) {
+      int a=3;
+      int b=10;
+      int c=b/(2*a);
+      System.out.println(c);
+      
+    }
+}
+
+******************************************************************************************************************************************************
+# Taking Input
+package fundamentals;
+import java.util.Scanner;
+public class ArithematicOperators {
+    public static void main(String args[]) {
+      int a,b;
+      Scanner s=new Scanner(System.in);
+      a=s.nextInt();
+      b=s.nextInt();
+      int c=a+b;
+      
+      String str=s.nextLine();
+      char ch=str.charAt(0);
+      System.out.println(ch);
+      s.nextDouble();
+      s.nextLong();
+      
+    }
+}
+
+**********************************************************************************************************************************************************
+
+What is the output of the following code if the input is : 5 10 ?
+
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+int b = s.nextInt();
+System.out.println(a+b);
+
+Ans: 15.
+
+****************************************************************************************************************************************************************
+
+What is the output of the following code if the input string is "Coding Ninjas"?
+Scanner s = new Scanner(System.in);
+String str;
+str = s.next();
+System.out.print(str);
+
+Ans: Coding
+
+****************************************************************************************************************************************************************
+What is the output of the following code if input is :
+10 abc def
+
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+String str = s.next();
+System.out.print(a);
+System.out.println(str);
+
+Ans: 10abc
+
+********************************************************************************************************************************************************************
+
+
+What is the output of the following code if input is : abc def 10
+Scanner s = new Scanner(System.in);
+String str = s.next();
+int a = s.nextInt();
+System.out.print(str + " " + a);
+
+Ans: InputMismatchException
+
+********************************************************************************************************************************************************************
+
+
+*********************************************************************************************************************************************************************
+// Problem 1. Average marks
+
+import java.util.*;  
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        int m1, m2, m3;
+        Scanner s = new Scanner(System.in);
+        String str = s.nextLine();
+        char ch = str.charAt(0);
+        
+        m1 = s.nextInt();
+        m2 = s.nextInt();
+        m3 = s.nextInt();
+        
+        int avg = (m1 + m2 + m3) / 3;
+        
+        System.out.println(ch);
+        System.out.println(avg);
+
+		
+	}
+
+}
+
