@@ -1,0 +1,85 @@
+Binary Number System
+How Negative numbers are stored
+
+**************************************************************
+Short data type has a minimum value of -
+Ans: -32768
+
+Range of byte data type is ?
+Ans: -128 to 127
+
+******************************************************************************************************************************
+//How Characters are stored ?
+
+import java.util.Scanner;
+public class DatatypesStorage {
+    public static void main(String args[]) {
+      
+      char ch='a';
+      int i='a'+3;
+      System.out.println(i);
+      int min=Integer.MIN_VALUE;
+      int max=Integer.MAX_VALUE;
+      System.out.println(min+" "+max);
+      
+    }
+}
+************************************************************************************************************************************
+// Typecasting
+
+import java.util.Scanner;
+public class TypeConversions {
+    public static void main(String args[]) {
+      System.out.println(4+4);
+      System.out.println(4+4.5);
+      System.out.println(4.1+4.4);
+      System.out.println((double)2/5);
+      System.out.println(2.0/5);
+      float f=(float)1.7;
+      //int i=(int)10.6;
+      short s=17;
+      //int i=s;
+      //s=(short)i;
+      char ch='a';
+      int i=ch;
+      ch=(char)i;
+      ch=(char)(ch+1);
+      System.out.println(i);
+    }
+
+******************************************************************************************************************************************
+# Will following statement give an error ?
+float f = 1.4;
+Ans: Yes
+
+System treats all decimal numbers as double by default. So 1.4 is stored as double(which is of 8 bytes). When we will try put a double into a float(which is of 4 bytes), it will give you error.
+
+# What will be the output of the following statement ?
+System.out.println('a' + 1);
+
+Ans: 98
+
+# What will be the output ?
+
+int i = 'c';
+System.out.println(i);
+Ans: 99
+
+
+# Automatic type conversion in Java takes place when :
+
+Ans: Two type are compatible and size of destination type is larger than sorce type.
+
+************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
