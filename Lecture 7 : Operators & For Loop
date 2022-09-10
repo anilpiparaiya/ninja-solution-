@@ -201,4 +201,147 @@ class Solution {
 Inside if 11 21
 
 
+Correct Output
+Send Feedback
+Select the correct output for the following code:
+public static void main (String[] args) {
+    int a=5;
+    a+=5+(++a)+(a++);
+    System.out.print(a);
+} 
+
+Ans: 22
+
+//////////////////////////////////////////////////////////////////////////////////////
+Precedence and Associativity
+
+package fundamentals;
+public class Precendence {
+    public static void main(String args[]) {
+      int i=6;
+      int j=8;
+      int c=5*(2/8);
+      System.out.println(c);
+      //boolean a=i+5>5 && j>6;
+      //System.out.println(c);
+    }
+}
+
+
+///////////////////////////////////////////////////////
+Guess the Output
+Send Feedback
+public static void main (String[] args) {
+    int a=10;
+    a+=++a-5/3+6*a;
+    System.out.print(a);
+}
+
+Ans: 86 
+Solution Description
+a+=++a-5/3+6*a.
+a+=11-1+6*11.
+a=10+11-1+66=86.
+
+///////////////////////////////////////////////////////////////////////////
+For Loop 
+
+package fundamentals;
+public class ForLoops {
+    public static void main(String args[]) {
+      int n=5;
+      //int i=1;
+      //while(i<=n){
+        //  System.out.println(i);
+         // i++;
+     // }
+      int i=1;
+      for(;i<=n;){
+          System.out.println(i);
+          i++;
+      }
+      System.out.println(i);
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Nth fibonacci number
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        
+      int n = input.nextInt();
+        int f1 = 0;
+        int f2 = 1;
+        int ans = 0;
+        if(n == 0 || n == 1){
+             System.out.println(n); 
+            
+        }
+        
+        else{
+            for(int i = 2; i<=n; i++){
+            int temp = f1 + f2;
+            f1 = f2;
+            f2 = temp;
+            ans = temp;
+            
+           
+        }
+        System.out.print(ans); 
+        }
+        
+        
+      
+    }
+}
+
+//////////////////////////////////////////////////////
+
+For Loop
+Send Feedback
+How many times will the following loop run?
+for(int i=1;i<10;i*=2)
+{
+     System.out.println(i);
+} 
+
+Ans: 4
+
+Guess the Output
+Send Feedback
+Which value(s) can be used to initialize i so that the loop is finite:
+public static void main (String[] args) {
+    for(int i=_;i>0;i=i%3)
+    {
+        System.out.print("*");
+    }
+}
+
+
+Ans: The value which is divisible by 3 would result in finite loop.
+
+///////////////////////////////////////////////////////////////////////////////
+
+Break Keyword
+
+package fundamentals;
+public class BreakKeyword {
+    public static void main(String args[]) {
+      int n=5;
+      for(int i=1;i<=n;i++){
+          for(int j=1;j<=n;j++){
+              if(i+1==j){
+              //break;
+              return;
+              }
+              System.out.print(j+" ");
+          }
+          
+      }
+      System.out.println();
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
 
