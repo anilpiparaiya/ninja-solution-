@@ -109,3 +109,96 @@ public class BitwiseOperators {
     }
 }
 ///////////////////////////////////////////////////////////////
+Bitwise Operator
+Send Feedback
+What will be the output ?
+public static void main(String args[])
+   {
+       int a = 42;
+       int b = ~a; (there is tilde sign before a)
+       System.out.print(a + " " + b);       
+   }
+ 
+ Ans: 42, -43
+ 
+ 
+Guess the output
+Send Feedback
+class Output {
+    public static void main(String args[]) 
+    {    
+         int x , y = 1;
+         x = 10;
+         if (x != 10 && x / 0 == 0)
+             System.out.println(y);
+         else
+             System.out.println(++y);
+    } 
+}
+
+Ans: 2
+
+Guess the output
+Send Feedback
+class Solution {
+    public static void main(String args[]) 
+    {   
+    int x = 15;
+    int y = x++;
+    int  z = ++x;
+    System.out.println(y +" " + z);
+    }
+}
+
+Ans: 15 17
+
+Guess the output
+Send Feedback
+class Solution {
+    public static void main(String args[]) 
+    {        
+         int g = 3;
+         System.out.print(++g * 8);
+    } 
+}
+
+Ans: 32
+
+Guess the output
+Send Feedback
+class Solution {
+    public static void main(String args[]) 
+    {
+        int x =10;
+        int y = 20;
+        if(x++ > 10 && ++y > 20 ){
+        System.out.print("Inside if  ");
+        }else{
+        System.out.print("Inside else  ");
+        }
+        System.out.println(x +" "+y);
+     }
+}        
+
+Ans: Inside else 11 20
+
+Guess the output
+Send Feedback
+class Solution {
+    public static void main(String args[]) 
+    {
+         int x = 10;
+         int y = 20;
+         if(x++ > 10 || ++y > 20 ){
+        System.out.print("Inside if  ");
+         }else{
+        System.out.print("Inside else  ");
+         }
+         System.out.println(x  + " " + y);
+    }
+}     
+
+Inside if 11 21
+
+
+
