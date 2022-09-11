@@ -344,4 +344,215 @@ public class BreakKeyword {
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
+What is the output
+Send Feedback
+What will be the output the following code?
+for(int i = 0; i < 5; i = i + 1){
+    System.out.print(i + " ");
+    i = i + 1;
+}
 
+Ans: 0 2 4
+
+What is the output
+Send Feedback
+What will be the output the following code?
+for(int i = 1; i < 5; i = i + 1){
+    System.out.print(i +" ");
+    i = i - 1;
+}
+
+Ans: Infinite 1's
+
+What is the output
+Send Feedback
+What will be the output ?
+for(int i = 0; i < 2; i = i + 1) {
+     for(int j = 0; j < 2; j = j + 1) {
+          if (j == 1)
+              break;
+          System.out.print(j +" ");
+      }
+ } 
+ 
+ Ans: 0 0
+ 
+Guess the Output
+Send Feedback
+Guess the output for the following code:
+public static void main (String[] args) {
+    int i=0;
+    for(;;)
+    {
+        if(i==5)
+            break;
+        System.out.print(i);
+        i++;
+    }
+}
+
+Ans: 01234
+
+Correct Output
+Send Feedback
+Select the correct output for the following code:
+public static void main (String[] args) {
+    for(int i=7;i!=0;i--)
+    {
+        System.out.print(i--);
+    }
+}
+
+Ans: Infinite Loop
+
+
+Find the error
+Send Feedback
+Which code snippet would generate an error?
+1.
+for(int i=1;;i++)
+    {   if(i==5)
+            break;
+        System.out.print(i);
+    }
+2.
+for(int i=1;;i++)
+    {   if(i<5)
+            System.out.print(i);
+        else 
+            break;
+    }
+3.
+for(int i=1;;i++)
+    {   if(i>5)
+        {
+            break;
+            System.out.print("break statement reached");
+        }
+        System.out.print(i);
+    }
+Ans: 3
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Continue Keyword
+
+package fundamentals;
+public class ContinueKeyword {
+    public static void main(String args[]) {
+      int n=5;
+      for(int i=1;i<=n;){
+          
+              if(i==4){
+              
+              continue;
+              }
+              i++;
+              System.out.println(i);
+          
+      }
+      System.out.println();
+    }
+}
+
+Skip iteration
+Send Feedback
+Which of these jump statements can skip processing remainder of code in its body for a particular iteration ?
+Ans: Continue
+
+####"break" is used to exit from the current loop.
+####"return" statement is used to exit from the current function.
+####"continue" is used to skip the current iteration of a loop and continue with the next iteration.
+
+
+What is the output
+Send Feedback
+int i = 1;
+while(i < 5) {
+    if(i == 3) {
+        break;
+    }
+    System.out.print(i + " ");
+    i++;
+}
+
+Ans: 1 2
+
+What is the output
+Send Feedback
+int i = 1;
+while(i < 5) {
+    if(i == 3) {
+        continue;
+    }
+    System.out.print(i + " ");
+    i++;
+}
+
+Ans: 1 2 with infinite loop
+
+What is the output
+Send Feedback
+int i = 1;
+while(i < 3) {
+    int j = 1;
+    while(j < 5) {
+        if(j == 3) {
+            break;
+        }
+        System.out.print(j + " ");
+        j++;
+    }
+    i++;
+}
+
+Ans: 1 2 1 2
+
+What is the output
+Send Feedback
+int i = 1;
+while(i < 3) {
+    int j = 0;
+    while(j < 5) {
+        j++;
+        if(j == 3) {
+            continue;
+        }
+        System.out.print(j + " ");
+    }
+    i++;
+}
+
+Ans: 1 2 4 5 1 2 4 5
+
+/////////////////////////////////////////////////////
+Print All prime numbers
+import java.util.Scanner;
+public class Solution {
+
+	public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+  		int i;
+  		int n1 = 1;
+  		int j;
+
+          while (n1 <= n) {
+           j = 0;
+           i = 2;
+           while (i <= n1 / 2) {
+            if (n1 % i == 0) {
+             j++;
+             break;
+            }
+            i++;
+           }
+           if (j == 0 && n1 != 1) {
+            System.out.println(n1);
+           }
+           n1++;
+          }
+
+ }
+}
